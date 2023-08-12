@@ -1,0 +1,142 @@
+@use "sass:color";
+
+// colors
+$clr-neutral-100: rgb(240, 240, 240);
+$clr-neutral-900: rgb(40, 40, 40);
+$clr-primary: rgb(0, 147, 68);
+
+// font family
+$ff-main: "Open Sans";
+$ff-metal: "Metal Mania";
+
+// font weight
+$fw-400: 400;
+$fw-600: 600;
+$fw-700: 700;
+
+// sizes
+$fs-8: 0.5rem;
+$fs-16: 1.0rem;
+$fs-18: 1.125rem;
+$fs-20: 1.25rem;
+$fs-24: 1.5rem;
+$fs-36: 2.25rem;
+$fs-48: 3rem;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    text-align: center;
+}
+
+.container{
+    width: 90vw;
+    height:  100vh;
+    background:  url(../images/btrLogo.png) center no-repeat fixed;
+    font-family: $ff-main;
+    margin-inline: auto;
+}
+
+.title{
+    font-size: $fs-48;
+    font-family: $ff-metal;
+    color: $clr-primary;
+    text-shadow: 2px 2px 3px $clr-neutral-900;
+    text-transform: uppercase;
+    margin-block: $fs-48;
+    letter-spacing: 2px;
+
+    &-name{
+        border-bottom: 3px solid $clr-primary;
+    }
+}
+
+.cards {
+    display: flex;
+    width: 60vw;
+    margin-inline: auto;
+    flex-wrap: wrap;
+}
+.card{
+    border-radius: 10px;
+    box-shadow: 3px 2px 4px $clr-neutral-900;
+    background: $clr-primary;
+    color: $clr-neutral-100;
+    line-height: $fs-36;
+    margin-inline: auto;
+    margin-block: $fs-24;
+    padding: $fs-8;
+    height: 350px;
+    width: 350px;
+
+    &-title{
+        font-size: $fs-48;
+        letter-spacing: 2px;
+    }
+
+    &-skate-img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.btn{
+    padding: .25em;
+    margin-block: 1em;
+    background-color: $clr-neutral-100;
+    border: none;
+    border-radius: 10px;
+    width:  70%;
+    box-shadow: 2px 3px 4px $clr-neutral-900;
+
+    &-link{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: $fw-700;
+        font-size: $fs-36;
+        color: $clr-primary;
+        letter-spacing: 2px;
+    }
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        background-color: $clr-neutral-900;
+        color: $clr-neutral-100;
+        box-shadow: 2px 3px 4px $clr-neutral-100;
+    }
+}
+
+.monthly-donation{
+    color: $clr-primary;
+    font-size: $fs-24;
+    font-weight: $fw-700;
+    line-height: $fs-48;
+    letter-spacing: 2px;
+
+}
+
+.footer{
+    font-family: $ff-main;
+    font-size: $fs-8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $fs-16;
+
+    &-polices{
+        margin-right: $fs-48;
+    }
+}
+
+
+
+
+

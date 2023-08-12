@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  text-align: center;
+}
+
+.container {
+  width: 90vw;
+  height: 100vh;
+  background: url(../images/btrLogo.png) center no-repeat fixed;
+  font-family: "Open Sans";
+  margin-inline: auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: "Metal Mania";
+  color: rgb(0, 147, 68);
+  text-shadow: 2px 2px 3px rgb(40, 40, 40);
+  text-transform: uppercase;
+  margin-block: 3rem;
+  letter-spacing: 2px;
+}
+.title-name {
+  border-bottom: 3px solid rgb(0, 147, 68);
+}
+
+.cards {
+  display: flex;
+  width: 60vw;
+  margin-inline: auto;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 3px 2px 4px rgb(40, 40, 40);
+  background: rgb(0, 147, 68);
+  color: rgb(240, 240, 240);
+  line-height: 2.25rem;
+  margin-inline: auto;
+  margin-block: 1.5rem;
+  padding: 0.5rem;
+  height: 350px;
+  width: 350px;
+}
+.card-title {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+.card-skate-img {
+  width: 200px;
+  height: 200px;
+}
+
+.btn {
+  padding: 0.25em;
+  margin-block: 1em;
+  background-color: rgb(240, 240, 240);
+  border: none;
+  border-radius: 10px;
+  width: 70%;
+  box-shadow: 2px 3px 4px rgb(40, 40, 40);
+}
+.btn-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.25rem;
+  color: rgb(0, 147, 68);
+  letter-spacing: 2px;
+}
+.btn:hover, .btn:focus {
+  cursor: pointer;
+  background-color: rgb(40, 40, 40);
+  color: rgb(240, 240, 240);
+  box-shadow: 2px 3px 4px rgb(240, 240, 240);
+}
+
+.monthly-donation {
+  color: rgb(0, 147, 68);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: 2px;
+}
+
+.footer {
+  font-family: "Open Sans";
+  font-size: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.footer-polices {
+  margin-right: 3rem;
+}/*# sourceMappingURL=style.css.map */
